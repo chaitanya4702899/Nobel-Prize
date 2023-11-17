@@ -153,6 +153,12 @@
 
         function fetchPrizes() {
             // Your existing JavaScript code for fetching and displaying data
+let p = fetch("http://api.nobelprize.org/v1/prize.json")
+p.then((value1) =>{
+    return value1.json ()
+}).then((value2)=>{
+    console.log(value2)
+})
         }
     </script>
 </body>
